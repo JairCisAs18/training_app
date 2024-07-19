@@ -1,0 +1,70 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#header{
+    width: 90%!important;
+    height: 8%;
+    background-color: whitesmoke;
+}
+
+.logo{
+    width: 50%;
+    height: 70%;
+}
+
+.logo > img{
+    height: 100%;
+    width: 100%;
+}
+
+#logo-lg{
+    display: none;
+}
+
+a{
+    text-decoration: none!important;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 102, 179)!important;
+}
+
+#content{
+    width: 90%!important;
+}
+
+@media (min-width:450px) and (max-width: 2000px){
+    #header{
+        width: 80%!important;
+    }
+    #logo-sm{
+        display: none;
+    }
+    #logo-lg{
+        display: block;
+    }
+    a{
+        font-size: 20px;
+    }
+    .col-6:first-child{
+        padding-left: 3%!important;
+    }
+    .col-6:last-child{
+        flex-direction: row!important;
+        justify-content: end!important;
+        align-items: center!important;
+        padding-right: 3%!important;
+
+    }
+    .col-6:last-child > a{
+        padding-bottom: 0!important;
+        padding-top: 0!important;
+    }
+    .col-6:last-child > a:last-child{
+        padding-left: 5%;
+    }
+    #content{
+        width: 80%!important;
+    }
+}
